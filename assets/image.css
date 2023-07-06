@@ -1,0 +1,13 @@
+.container-content {
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  justify-content: center;
+  top: 30%;
+  right: 25%;
+  position: absolute;
+}
+
+.img-content {
+  width: 40%;
+  height: 100%;
+}

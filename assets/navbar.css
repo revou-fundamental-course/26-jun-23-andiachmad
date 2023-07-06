@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.menu__bar {
+  background-color: rgb(46, 46, 46);
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1%;
+}
+
+.logo {
+  color: rgb(85, 117, 92);
+  font-size: 30px;
+}
+
+.logo span {
+  color: whitesmoke;
+}
+
+.menu__bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu__bar ul li {
+  padding: 5px 20px;
+  position: relative;
+}
+
+.menu__bar ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 20px;
+
+  transition: 0.5s;
+}
+
+.menu__bar ul li a:hover {
+  color: rgb(85, 117, 92);
+}
+
+.dropdown__menu {
+  display: none;
+}
+
+.menu__bar ul li:hover .dropdown__menu {
+  display: block;
+  position: absolute;
+  left: 0%;
+  top: 100%;
+  background-color: rgb(46, 46, 46);
+}
+
+.menu__bar ul li:hover .dropdown__menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu__bar ul li:hover .dropdown__menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+.dropdown__menu-1 {
+  display: none;
+}
+
+.dropdown__menu ul li:hover .dropdown__menu-1 {
+  display: block;
+  position: absolute;
+  top: 0%;
+  left: 160px;
+  background-color: rgb(46, 46, 46);
+}
+
+.hero {
+  height: calc(100vh - 70px);
+  background-color: rgb(238, 238, 238);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
